@@ -1,0 +1,31 @@
+%btn{
+    display:inline-block;
+    border-radius:5px;
+    padding:8px 20px;
+    margin: auto;
+    &:hover{
+        transform:scale(.98)
+    }  
+    a{
+        color: black;
+    }
+}
+
+%btnBenefit{
+    display:inline-block;
+    border-radius:5px;
+    padding:8px 20px;
+    margin: auto;
+    &:hover{
+        transform:scale(.98)
+    }     
+}
+
+.btn-primary{
+    @extend %btn;
+    background-color:rgba(35, 36, 35, 0.349);
+}
+.btn-secondary{
+    @extend %btn;
+    background-color: rgb(204, 204, 203);
+}
